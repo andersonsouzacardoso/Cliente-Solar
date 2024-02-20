@@ -1,5 +1,5 @@
 ![Pizzaria Solar](https://github.com/andersonsouzacardoso/Cliente-Solar/assets/108300046/c6f3ab66-48ee-4b39-9516-0d06b9393fa4)
-# TV Landing Pizzaria. <br>:pizza:
+# Landing Page Pizzaria. <br>:pizza:
 <br>  Link do projeto<br>
  ## DESCRIÇÃO DO PROJETO:<br>:computer:
 ### Esta é uma Landing Page que fiz para um cliente dono de pizzaria.<br>
