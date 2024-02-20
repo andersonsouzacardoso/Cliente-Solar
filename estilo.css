@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family= Roboto :wght@400;500;700;900 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@400;500;600;700 & family= Roboto:wght@900 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --color-amarelo: #f3f32d;
+    --color-vermelho: #aa0707;
+    --color-amarelo2: #c0c035;
+    --color-bordo: #6e0816;
+    --color-preto: black;
+    --color-branco: white;
+    --color-amarelo3:#d8d82285;
+}
+/*overflow para não ter a barra de rolagem*/
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+/*MENU*/
+.conteudo{
+    width: 100vw;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6e0816;
+    position: fixed;
+    padding-left: 30rem;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.logo h3{
+    font-size: 1.6rem;
+    color: white;
+    margin-left: 3rem;
+    text-align: center;
+}
+
+.conteudo .ListadoMenu{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo .ListadoMenu li a{
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.conteudo .ListadoMenu li a:hover{
+    background-color: rgba(110, 8, 22, 0.308);
+    border-bottom: 4px solid #f3f32d;
+    color: #f3f32d;
+}
+
+.PrimeiraSecao{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8) ) ,url(./imagens/capa.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+}
+.PrimeiraSecao .ConteudoPrincipal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.PrimeiraSecao h1{
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.PrimeiraSecao h2{
+    color: #f3f32d;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+.PrimeiraSecao .whats{
+    color: green;
+}
+/*CARDÁPIO*/
+
+.SegundaSecao{
+    width: 100vw;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%23f1f1df' fill-opacity='0.52' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");    
+    background-color: #e6da12;;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}   
+.SegundaSecao .cardapio{
+    align-items: center; 
+}
+
+.SegundaSecao h1{
+    font-size: 7rem;
+    text-transform: uppercase;
+    padding: 5rem;
+    text-align: center;
+    color: #6e0816;
+}
+.cardapio h2{
+    font-size: 5rem;
+    margin-left: 2rem;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Dancing Script', cursiva;
+}
+mark{
+    background-color: #aa0707;
+    border-radius: 10px;
+    border: white solid;
+    font-family: 'Dancing Script', cursiva;
+}
+.cardapio h3{
+margin-top: 1rem;
+margin-left: 2rem;
+font-size: 4rem;
+color: #6e0816;
+font-family: 'Dancing Script', cursiva;
+}
+.cardapio p{
+margin-top: 1rem;
+margin-left: 2rem;
+font-size: 3rem;
+font-family: 'Dancing Script', cursiva;
+}
+.cardapio h2 mark{
+    color: white;
+}
+
+/*Promoção*/
+section.TerceiraSecao{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    width: 100vw;
+    height: 100%;
+    padding: 0 !important;
+    background-color: #e6da12;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='18' viewBox='0 0 100 18'%3E%3Cpath fill='%23f1f1df' fill-opacity='0.52' d='M61.82 18c3.47-1.45 6.86-3.78 11.3-7.34C78 6.76 80.34 5.1 83.87 3.42 88.56 1.16 93.75 0 100 0v6.16C98.76 6.05 97.43 6 96 6c-9.59 0-14.23 2.23-23.13 9.34-1.28 1.03-2.39 1.9-3.4 2.66h-7.65zm-23.64 0H22.52c-1-.76-2.1-1.63-3.4-2.66C11.57 9.3 7.08 6.78 0 6.16V0c6.25 0 11.44 1.16 16.14 3.42 3.53 1.7 5.87 3.35 10.73 7.24 4.45 3.56 7.84 5.9 11.31 7.34zM61.82 0h7.66a39.57 39.57 0 0 1-7.34 4.58C57.44 6.84 52.25 8 46 8S34.56 6.84 29.86 4.58A39.57 39.57 0 0 1 22.52 0h15.66C41.65 1.44 45.21 2 50 2c4.8 0 8.35-.56 11.82-2z'%3E%3C/path%3E%3C/svg%3E");    
+}
+.TerceiraSecao h3{
+    text-align: center;
+    padding: 3rem;
+    color: #6e0816;
+    font-size: 5rem;
+}
+
+.promo1{
+    width: 1000px;
+    height: 500px;
+    border: 10px solid white;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.forno{
+    width: 700px;
+    border: 10px solid white;
+    margin: 10px;
+}
+.pepsi, .guarana{
+    width: 150px;
+   border-radius: 20px;
+    border: 10px solid #d8d82285;
+    margin: 5px;   
+}
+.forno img, .pepsi img, .guarana img{
+    width: 100%;
+    height: 100%;
+}
+.info{
+    width: 800px;
+    height: 200px;
+    margin-top: 20px;
+    border:  dashed 5px green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.pepsi p, .guarana p{
+    font-size: 15px;
+    color: #6e0816;
+    margin-top: 10px;   
+}
+
+.InfoPepsi, .InfoGuarana{
+    border: 5px solid green;
+    border-top: 20px solid white;
+    border-radius: 10px;
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+}
+.InfoPepsi, .InfoGuarana h4{
+    font-size: 15pt;
+}
+.promo2{
+    width: 70%;
+    border: 10px solid white;
+    margin-top: 20px;  
+    column-count: 4;
+    column-gap: 2px; 
+    
+}
+.Tele{
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.promo3{
+    width: 70%;
+    border: 10px solid white;
+    margin-top: 20px;  
+    column-count: 4;
+    column-gap: 2px;     
+}
+.InfoAlmoco, .InfoRodizio{
+    border: 5px solid #e70624;
+    border-top: 20px solid white;
+    width: 30%;
+    font-size: 15pt;
+   display: flex;
+   flex-direction: column;
+   margin-top: 20px;
+   margin-bottom: 5px;
+}
+.InfoAlmoco h5{
+    display: flex;
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.InfoAlmoco h2{
+    margin-top: 10px;
+}
+.InfoAlmoco mark, .InfoRodizio mark{
+    font-size: 15pt;
+   border: none;
+   margin-bottom: 10px;
+   color: white;
+}
+.bife{
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    margin-left: 15px;
+    padding: 10px;
+}
+.QuartaSecao{
+    width: 100%;
+    border: 10px solid #6e0816;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.QuartaSecao h3{
+    text-align: center;
+    padding: 3rem;
+    color: #6e0816;
+    font-size: 5rem;
+}
+.map{
+    width: 100%;
+     height: 300px;
+}
+@media(max-width: 1200px){
+.ConteudoPrincipal{
+    display: block;
+}
+.conteudo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12%;
+    padding-left: 0px;
+}
+.PrimeiraSecao h1{
+    text-align: center;
+    font-size: 3rem;
+}
+}
+@media(max-width: 992px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width: 768px){
+    html{
+        font-size: 45%;
+    }
+    .conteudo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+    .conteudo .ListadoMenu{
+        display: none;
+    }
+    .um, .dois, .tres{
+        width: 80%;
+        height: 2px;
+        background-color: #f3f32d;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+}
+.AlterarMenu{
+    width: 30px;
+    height: 30px;
+}
+.conteudo.on{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(30, 31, 30, 0.8);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conteudo.on .logo{
+    display: none;
+}
+.conteudo.on .AlterarMenu{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}
+.conteudo.on .ListadoMenu{
+    display: block;
+}
+.conteudo.on .ListadoMenu li{
+    display: flex;
+    justify-content: center;
+}
+.conteudo.on .ListadoMenu li a{
+    font-size: 2rem;
+}
+.conteudo.on .AlterarMenu .dois{
+    opacity: 0;
+}
+.conteudo.on .AlterarMenu .um{
+    transform: rotate(45deg) translate(5px, -8px);
+}
+.conteudo.on .AlterarMenu .tres{
+    transform: rotate(-45deg) translate(20px, -6px);
+}
+@media(max-width: 600px){
+    .conteudo h1{
+        width: 500px;
+        text-align: center;
+        font-size: 4rem;
+    }
+} @media(max-width: 395px){
+    .ConteudoPrincipal h1{
+        text-align: center;
+        width: 250px;
+    }
+    .cardapio h2{
+        font-size: 4rem;
+    margin-left: 2rem;
+    
+    }
+   
+} 
+@media(width <= 600px){
+    .promo1{
+        width: 500px;
+        height: 300px;
+    }
+    .info{
+        width: 400px;
+        gap: 5px;
+        border: none;
+    }
+    .InfoPepsi, .InfoGuarana h4{
+        font-size: 12pt;
+        text-align: center;   
+    }
+    .promo2{
+        column-count: 2;    
+    }
+    .InfoAlmoco, .InfoRodizio{
+        width: 55%;
+    }
+    .promo3{
+        column-count: 2;
+    }
+    .PrimeiraSecao{
+        background-position: left;
+        background-size: cover;
+        
+    }
+    
+}
