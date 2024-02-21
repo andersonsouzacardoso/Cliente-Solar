@@ -436,8 +436,10 @@ section.TerceiraSecao{
     }
     .PrimeiraSecao{
         background-position: left;
-        background-size: cover;
-        
+        background-size: cover;    
+    }
+    .pepsi, .guarana{
+        display: none;
     }
     
 }
